@@ -141,4 +141,12 @@
     <td>git blame &lt;file&gt;</td>
     <td>Show who changed each line in a file</td>
   </tr>
+  <tr>
+    <td>git revert &lt;COMMIT_HASH&gt;</td>
+    <td>Removes the changes of the specific commit and adds another commit of that removal of change. It doesn't make any changes to its previous and after commits</td>
+  </tr>
+  <tr>
+    <td>git reset &lt;COMMIT_HASH&gt;</td>
+    <td>Untracks all the changes after that specific commit. Means goes back to that commit. It untracks all the changes but doesn't remove all the changes of that commit.</td>
+  </tr>
 </table>
