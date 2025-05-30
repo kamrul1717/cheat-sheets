@@ -1,5 +1,7 @@
 <?php
 
+// Structural Design Pattern
+
 /* Step 1: Create a Coffee interface */
 interface Coffee {
     public function getCost();
