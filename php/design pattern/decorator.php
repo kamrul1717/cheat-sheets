@@ -2,6 +2,8 @@
 
 // Structural Design Pattern
 
+/* To add new behavior or responsibility to an object dynamically */
+
 /* Step 1: Create a Coffee interface */
 interface Coffee {
     public function getCost();

@@ -2,6 +2,10 @@
 
 // Behavioral Design Pattern
 
+/*
+Strategy Pattern lets you define a family of algorithms (or behaviors), put each one in a separate class, and make their objects interchangeable.
+*/
+
 /* Step 1: Create the Strategy Interface */
 interface PaymentStrategy {
     public function pay($amount);

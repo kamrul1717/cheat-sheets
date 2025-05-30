@@ -2,6 +2,11 @@
 
 // Structural Design Pattern
 
+/*
+The Facade Pattern provides a unified, simplified interface to a set of complex subsystems.
+It hides the complexities and exposes only what the client needs.
+*/
+
 /* Step 1: Subsystems (complex parts) */
 
 class DVDPlayer {

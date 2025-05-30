@@ -2,6 +2,14 @@
 
 // Creational Patterns
 
+/*
+Definition:
+A design pattern that provides a method to create a single object without exposing the exact class name to the client. The object type is usually decided based on input.
+
+Key Point:
+It creates one object from a set of possible classes.
+*/
+
 /* Step 1: Shape Interface */
 interface Shape {
     public function draw();
