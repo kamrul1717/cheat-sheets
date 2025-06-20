@@ -1,0 +1,6 @@
+========== Super globals ===========
+
+$_SERVER
+
+
+when submitting a data both using GET and POST method in the same request. the $_REQUEST super global will accept the POST one.

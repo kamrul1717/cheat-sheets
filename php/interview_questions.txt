@@ -1,0 +1,40 @@
+Do you know about desing pattern explain?
+
+What are triggers?
+
+Write a function to sort array without using any built in function.
+
+What are different types of search engines?
+
+What is trait in Brief?
+
+SDLC of Laravel
+
+
+Explain different versions of PHP
+
+Explain cross join and union join
+
+
+difference between static keyword, final class and methods
+
+
+what is PSR Concept?
+
+Usage and difference between composer.json and composer.lock?
+
+Why PHP not given multiple inheritance?
+
+Why do we need Traits even when we can define some methods in parent controller?
+
+What is the use of cookie in APIs?
+
+What are different methods of HTTP request and explain usage?
+
+While working with sessions, How server know which user is session in currently?
+
+When we should use Transactions (ACID) or when not?
+
+How to get headers value while working with APIs?
+
+Magic methods and magic contraints in depth.

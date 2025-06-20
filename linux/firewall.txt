@@ -1,0 +1,72 @@
+systemctl start firewalld
+systemctl stop firewalld
+
+systemctl status firewalld
+systemctl restart firewalld
+
+firewall-cmd --list-all
+firewall-cmd --get-services
+
+firewall-cmd --add-service=http
+firewall-cmd --add-service=http --permanent
+firewall-cmd --list-all
+firewall-cmd --remove-service=http
+firewall-cmd --remove-service=http --permanent
+systemctl start httpd
+curl localhost
+firewall-cmd --add-port=80/tcp
+firewall-cmd --remove-port=80/tcp
+firewall-cmd --reload
+firewall-cmd --add-port=80/tcp --permanent
+firewall-cmd --remove-port=80/tcp --permanent
+firewall-cmd --reload
+
+
+
+
+firewall-cmd --add-rich-rule="rule family='ipv4' source address='192.168.0.130' reject"
+firewall-cmd --add-rich-rule="rule family='ipv4' source address='192.168.0.130' reject" --permanent
+
+firewall-cmd --direct --add-rule ipv4 filter OUT PUT 0 -d 40.25.54.25 - j DROP
+
+firewall-cmd --add-icmp-block-inversion
+
+firewall-cmd --get-zones
+firewall-cmd --get-active-zones
+firewall-cmd --set-default-zone=dmz
+firewall-cmd --reload
+firewall-cmd --list-all 
+
+firewall-cmd --zone=public --list-all
+
+sestatus
+cd /var/www
+ls -lZ
+host -t a www.facebook.com
+
+
+apt update
+apt dist-upgrade
+apt install ufw
+
+ufw default allow outgoing
+ufw default deny incoming
+
+ufw allow ssh
+or
+ufw allow 22
+
+ufw status
+ufw enable
+ufw disable
+
+ufw allow http/tcp
+or
+ufw allow 80/tcp
+
+ufw allow from 23.44.34.5 to any port 22 proto tcp
+ufw status
+ufw status numbered
+ufw delete 1
+
+

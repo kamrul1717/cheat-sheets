@@ -1,0 +1,11 @@
+Bad Software Design
+--------------------
+Sypmtoms of Poor Software design(Design Smell)
+ - Rigidity (The design is hard to change)
+ - Fragility (The design is easy to break)
+ - Immobility (The design is hard to reuse)
+ - Software Viscosity (Easier to Hack than normal flow)
+ - Enviroment Viscosity (slow and inefficient development enviroment, very long compile times, serveral minutes to deploy)
+ - Needless Complexity (Overdesign)
+ - Needless Repeatation
+ - Opacity (A module is difficult to understand)
