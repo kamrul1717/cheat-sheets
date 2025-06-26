@@ -25,3 +25,10 @@ function isPrime($n) {
     }
     return true;
 }
+
+
+echo PrimeMover(1);  // 2
+echo "\n";
+echo PrimeMover(6);  // 13
+echo "\n";
+echo PrimeMover(100); // 541
