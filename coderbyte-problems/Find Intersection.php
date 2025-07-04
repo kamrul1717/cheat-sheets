@@ -1,5 +1,5 @@
 <?php 
-// Using Build in function
+// Using Built in function
 function findIntersection($arr1, $arr2) {
     return array_values(array_intersect($arr1, $arr2));
 }
