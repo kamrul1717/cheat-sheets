@@ -32,6 +32,33 @@ s.discard(10)
 s.pop()
 s.clear()
 
+
+
+🔁 Looping Through a Set
+
+### Basic loop
+fruits = {"apple", "banana", "cherry"}
+for item in fruits:
+    print(item)
+
+### Loop with condition
+for fruit in fruits:
+    if "a" in fruit:
+        print(fruit)
+
+### Loop with index
+for index, item in enumerate(fruits):
+    print(index, item)
+
+---
+
+💥 Set Comprehension (One-liner set creation)
+numbers = {x*x for x in range(5)}
+print(numbers)
+# Output: {0, 1, 4, 9, 16}
+
+
+
 🥊 Set Operations
 Operation               Code         Description
 Union                   A | B        All unique items from both sets
