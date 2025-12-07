@@ -1,0 +1,36 @@
+set key_name value
+ex: set name Kamrul
+ex-update: set name "Kamrul Hassan"
+
+get key_name
+ex: get name
+
+getrange key_name start end
+ex: getrange name 0 2 
+output: kam
+
+mset key_name value key_name value
+ex: mset lang English technology redis
+
+mget key_name key_name
+ex: mget lang technology
+
+strlen key_name
+ex: strlen lang
+
+set count 1
+incr count
+incrby count 10
+decr count 
+decrby count 10
+
+set pi 3.14
+get pi
+incrbyfloat pi 0.0001
+
+set a 1
+expire a 10 (in seconds)
+
+ttl a
+10
+setex b 10 anyvalue

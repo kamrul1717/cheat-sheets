@@ -1,0 +1,14 @@
+RESTORE DATABASE HospitalityManagementDB
+FROM DISK = '/var/opt/mssql/backup/HospitalityManagementDB.bak'
+WITH 
+    MOVE 'rajuk_hostel' TO '/var/opt/mssql/data/HospitalityManagementDB.mdf',
+    MOVE 'rajuk_hostel_log' TO '/var/opt/mssql/data/HospitalityManagementDB_log.ldf',
+    REPLACE;
+GO
+
+
+/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'YourStrong!Passw0rd'
+
+/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'YourStrong!Passw0rd' -C
+
+/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P 'YourStrong!Passw0rd' -N -C
