@@ -34,3 +34,22 @@ expire a 10 (in seconds)
 ttl a
 10
 setex b 10 anyvalue
+
+key *
+
+flushall
+
+lpush key_name value
+ex: lpush country Bangladesh
+ex: lpush country USA
+
+lrange key_name start stop
+ex: lrange country 0 -1 (this will show all)
+
+rpush key_name value
+
+llen key_name
+
+lpop key_name
+rpop key_name
+

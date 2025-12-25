@@ -1,28 +1,29 @@
-📘 What is Iterator Design Pattern?
-The Iterator Pattern is a behavioral pattern that:
+<?php
+// 📘 What is Iterator Design Pattern?
+// The Iterator Pattern is a behavioral pattern that:
 
-✅ Provides a way to access the elements of a collection sequentially without exposing its underlying representation (like arrays, linked lists, trees).
-✅ Think of it as a cursor that lets you loop through a data structure in a consistent way.
+// ✅ Provides a way to access the elements of a collection sequentially without exposing its underlying representation (like arrays, linked lists, trees).
+// ✅ Think of it as a cursor that lets you loop through a data structure in a consistent way.
 
-📦 Real-life analogy:
+// 📦 Real-life analogy:
 
-A TV remote with "Next" and "Previous" buttons to iterate through channels. You don’t need to know how channels are stored inside the TV.
+// A TV remote with "Next" and "Previous" buttons to iterate through channels. You don’t need to know how channels are stored inside the TV.
 
-🏷️ Key Points
-Hides the internal structure of a collection.
+// 🏷️ Key Points
+// Hides the internal structure of a collection.
 
-Allows multiple traversals at the same time.
+// Allows multiple traversals at the same time.
 
-Supports iteration in different ways (forward, backward).
+// Supports iteration in different ways (forward, backward).
 
-📝 UML Components
-Iterator – Interface for accessing elements. (next(), hasNext())
+// 📝 UML Components
+// Iterator – Interface for accessing elements. (next(), hasNext())
 
-ConcreteIterator – Implements the iterator interface for a specific collection.
+// ConcreteIterator – Implements the iterator interface for a specific collection.
 
-Aggregate – Interface to create an iterator. (getIterator())
+// Aggregate – Interface to create an iterator. (getIterator())
 
-ConcreteAggregate – Implements Aggregate and returns a ConcreteIterator.
+// ConcreteAggregate – Implements Aggregate and returns a ConcreteIterator.
 
 // Iterator interface
 interface Iterator {
