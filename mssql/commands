@@ -1,3 +1,5 @@
+docker cp ./11_4_2026.bak mssql2022:/var/opt/mssql/data
+
 RESTORE DATABASE HospitalityManagementDB
 FROM DISK = '/var/opt/mssql/backup/HospitalityManagementDB.bak'
 WITH 
